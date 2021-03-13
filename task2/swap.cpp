@@ -15,9 +15,10 @@ void p_swap(int *a,int *b)
     *b = c;
 }
 
-void r_swap(int &a, int &b)
+template <class T>
+void r_swap(T &a, T &b)
 {
-    int c = a;
+    T c = a;
     a = b;
     b = c;
 }
